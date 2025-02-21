@@ -8,8 +8,16 @@ function apagar(){
 }
 function adicionar(dig){
     var op = document.getElementById('resultado').innerHTML;
+    if (op === "" && /[*\/]/.test(dig)) {
+        return;
+    }
+    if (/[+\-*/.]$/.test(op) && /[+\-*/.]/.test(dig)) {
+        return; 
+    }
 document.getElementById('resultado').innerHTML = op+dig;
+
 }
+
 function calcular(){
     var resultado = document.getElementById('resultado').innerHTML;
 if(resultado){
