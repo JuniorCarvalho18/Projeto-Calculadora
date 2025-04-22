@@ -8,48 +8,52 @@
 </head>
 <body>
    
-        <h1>Calculadora</h1>
-        <div class="bcalculadora">
-        <div class="calculadora">
-            
-            <p id="resultado"></p>
+        <header>
+            <h1>Calculadora</h1>
+        </header>
 
-            <table>
-                <tr>
-                    <td><button class="act" onclick="limpar()">C</button></td>
-                    <td><button class="act"onclick="apagar()">←</button></td>
-                    <td><button class="act"onclick="adicionar('/')">÷</button></td>
-                    <td><button class="act"onclick="adicionar('*')">x</button></td>
-                </tr>
-                <tr>
-                    <td><button onclick="adicionar('7')">7</button></td>
-                    <td><button onclick="adicionar('8')">8</button></td>
-                    <td><button onclick="adicionar('9')">9</button></td>
-                    <td><button class="act"onclick="adicionar('-')">-</button></td>    
-                    
-                </tr>
-                <tr>
-                    <td><button onclick="adicionar('4')">4</button></td>
-                    <td><button onclick="adicionar('5')">5</button></td>
-                    <td><button onclick="adicionar('6')">6</button></td>
-                    <td><button class="act"onclick="adicionar('+')">+</button></td>
-                    
-                </tr>
-                <tr>
-                    <td><button onclick="adicionar('1')">1</button></td>
-                    <td><button onclick="adicionar('2')">2</button></td>
-                    <td><button onclick="adicionar('3')">3</button></td>
-                    <td rowspan="2"><button class="res" onclick="calcular()" 
-                        style="height: 106px;font-weight: bold;background-color: rgba(0, 0, 255, 0.6);">=</button></td>
-                    
-                </tr>
-                <tr>
-                    <td colspan="2"><button onclick="adicionar('0')" style="width: 106px;">0</button></td>
-                    <td><button class="act" onclick="adicionar('.')">.</button></td>
-                </tr>
-            </table>
-     </div>
-    </div>
+        <main>
+            <div class="bcalculadora">
+            <div class="calculadora">
+            
+                <p id="resultado"></p>
+                <table>
+                    <tr>
+                        <td><button class="act" onclick="limpar()">C</button></td>
+                        <td><button class="act"onclick="apagar()">←</button></td>
+                        <td><button class="act"onclick="adicionar('/')">÷</button></td>
+                        <td><button class="act"onclick="adicionar('*')">x</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="adicionar('7')">7</button></td>
+                        <td><button onclick="adicionar('8')">8</button></td>
+                        <td><button onclick="adicionar('9')">9</button></td>
+                        <td><button class="act"onclick="adicionar('-')">-</button></td>
+            
+                    </tr>
+                    <tr>
+                        <td><button onclick="adicionar('4')">4</button></td>
+                        <td><button onclick="adicionar('5')">5</button></td>
+                        <td><button onclick="adicionar('6')">6</button></td>
+                        <td><button class="act"onclick="adicionar('+')">+</button></td>
+            
+                    </tr>
+                    <tr>
+                        <td><button onclick="adicionar('1')">1</button></td>
+                        <td><button onclick="adicionar('2')">2</button></td>
+                        <td><button onclick="adicionar('3')">3</button></td>
+                        <td rowspan="2"><button class="res" onclick="calcular()"
+                            style="height: 106px;font-weight: bold;background-color: rgba(0, 0, 255, 0.6);">=</button></td>
+            
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button onclick="adicionar('0')" style="width: 106px;">0</button></td>
+                        <td><button class="act" onclick="adicionar('.')">.</button></td>
+                    </tr>
+                </table>
+                 </div>
+                </div>
+        </main>
   
     <script src="script.js"></script>
 </body>
