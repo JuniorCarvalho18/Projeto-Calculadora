@@ -1,4 +1,3 @@
-
 function limpar(){
 document.getElementById('resultado').innerHTML = '';
 }
@@ -24,3 +23,19 @@ if(resultado){
     document.getElementById('resultado').innerHTML = eval(resultado);
 }
 }
+
+document.addEventListener('keydown', function(event) {
+    var key = event.key;
+    
+    if (/[0-9]/.test(key)) {
+        adicionar(key);
+    } else if (/[+\-*/.]/.test(key)) {
+        adicionar(key);
+    } else if (key === 'Enter' || key === '=') {
+        calcular();
+    } else if (key === 'Backspace') {
+        apagar();
+    } else if (key === 'Escape' || key.toLowerCase() === 'c') {
+        limpar();
+    }
+});
